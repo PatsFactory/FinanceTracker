@@ -74,5 +74,10 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./backend/projects/finance-tracker/node_modules/git-cz"
+    }
   }
 }
