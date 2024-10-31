@@ -9,10 +9,5 @@ import { RouterOutlet } from "@angular/router";
     styleUrl: "./app.component.scss"
 })
 export class AppComponent {
-    tile = "finance-tracker";
-
-    test() {
-        console.log("true");
-        return true;
-    }
+    public title = "finance-tracker";
 }
