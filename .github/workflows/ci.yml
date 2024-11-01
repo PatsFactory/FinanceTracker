@@ -52,19 +52,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
-        working-directory: frontend/projects/finance-tracker
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
+          cahce-dependency-path: frontend/projects/finance-tracker/package-lock.json
       - name: Run Frontend Lint
         working-directory: frontend/projects/finance-tracker
         run: npm lint
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
-        working-directory: backend/projects/finance-tracker
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
+          cahce-dependency-path: backend/projects/finance-tracker/package-lock.json
       - name: Run Backend Lint
         working-directory: backend/projects/finance-tracker
         run: npm lint
