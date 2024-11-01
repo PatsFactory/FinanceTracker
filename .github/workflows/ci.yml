@@ -55,7 +55,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-          cahce-dependency-path: frontend/projects/finance-tracker/package-lock.json
+          cahce-dependency-path: ./frontend/projects/finance-tracker/package-lock.json
       - name: Run Frontend Lint
         working-directory: frontend/projects/finance-tracker
         run: npm lint
@@ -64,7 +64,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-          cahce-dependency-path: backend/projects/finance-tracker/package-lock.json
+          cahce-dependency-path: ./backend/projects/finance-tracker/package-lock.json
       - name: Run Backend Lint
         working-directory: backend/projects/finance-tracker
         run: npm lint
