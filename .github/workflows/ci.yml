@@ -29,12 +29,14 @@ jobs:
         with:
           fetch-depth: 0
       - name: Print versions
+        working-directory: frontend/projects/finance-tracker
         run: |
           git --version
           node --version
           npm --version
           npx commitlint --version
       - name: Install commitlint
+        working-directory: frontend/projects/finance-tracker
         run: |
           npm install conventional-changelog-conventionalcommits
           npm install commitlint@latest
