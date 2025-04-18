@@ -61,7 +61,7 @@ export default [
 
             parserOptions: {
                 project: "tsconfig.json",
-                tsconfigRootDir: "E:\\repos\\FinanceTracker\\backend\\projects\\finance-tracker"
+                tsconfigRootDir: ""
             }
         },
 
