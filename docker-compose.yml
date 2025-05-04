@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql:latest
+    volumes:
+      - ./dockervolumes/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=finance
+      - MYSQL_USER=finance
+      - MYSQL_PASSWORD=finance
+    ports:
+      - 3306:3306
